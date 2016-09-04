@@ -9,7 +9,7 @@ javac HelloWorld.java
 ## run
 
 ```
-java HelloWorld.class
+java HelloWorld
 ```
 
 ## output

@@ -12,6 +12,7 @@
  *  % java -cp .:../../algs4.jar Draw < input.txt
  *  render a graph
  ******************************************************************************/
+
 import java.util.Arrays;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
