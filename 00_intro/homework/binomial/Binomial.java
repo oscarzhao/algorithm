@@ -5,7 +5,8 @@
  *  Data files:   input.txt
  *    
  *  An implementation of quick Binomial with test client. 
- *
+ *  
+ *  1.1.27
  *
  *  % java -cp .:../../algs4.jar Binomial < tests/xx
  *
