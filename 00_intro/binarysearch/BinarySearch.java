@@ -6,8 +6,6 @@
  *    
  *  An implementation of BinarySearch with test client. 
  *
- *  % more input.txt
- *  8
  *
  *  % java -cp .:../../algs4.jar BinarySearch tinyW.txt < tinyT.txt
  *
