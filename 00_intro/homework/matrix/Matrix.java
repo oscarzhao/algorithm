@@ -21,10 +21,11 @@ public class Matrix {
     if (a.length == 0 || a[0].length ==0 || b.length == 0 || b[0].length == 0) return null;
     int r = a.length;
     int c = b[0].length;
+    int mi = a[0].length;
     double[][] result = new double[r][c];
     for(int i = 0; i < r; i++ ) {
       for (int j = 0; j < c; j++ ){
-        for (int k = 0; k < a[r].length; k++) {
+        for (int k = 0; k < mi; k++) {
           result[i][j] += a[i][k] * b[k][j];
         }
       }
@@ -59,11 +60,13 @@ public class Matrix {
 
   // vector-metrix product
   public static double[] mult(double[] x, double[][] a) {
-    int col = x.length;
+    int row = a.length;
+    int col = a[0].length;
     double[] result = new double[col];
+
     for(int i = 0; i < col; i++) {
-      for(int j = 0; j < a.length; j++) {
-        result[i] += a[i][j] * x[i];
+      for(int j = 0; j < row; j++) {
+        result[i] += x[j] * a[j][i];
       }
     }
     return result;

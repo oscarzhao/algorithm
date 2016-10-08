@@ -21,15 +21,15 @@ public class Test {
         break;
       case "mult":
         String t = StdIn.readString();
-        if (t == "mm") {
+        if (t.equals("mm")) {
           a = readMatrix();
           b = readMatrix();
           testMultMM(a, b);
-        } else if (t == "mv") {
+        } else if (t.equals("mv")) {
           a = readMatrix();
           x = readVector();
           testMultMv(a, x);
-        } else if (t == "vm") {
+        } else if (t.equals("vm")) {
           x = readVector();
           a = readMatrix();
           testMultVm(x, a);
@@ -97,6 +97,7 @@ public class Test {
   }
 
   public static void testMultMM(double[][] a, double[][] b) {
+    printMatrix(b);
     double[][] result = Matrix.mult(a, b);
     printMatrix(result);
   }
