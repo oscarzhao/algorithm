@@ -7,7 +7,7 @@
  *    
  *  A Interval1D client 
  *  
- *  1.2.1
+ *  1.2.2 read N interval1D values, and print all intersection pairs.
  *
  ******************************************************************************/
 
